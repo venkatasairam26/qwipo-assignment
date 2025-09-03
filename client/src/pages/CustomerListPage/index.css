@@ -1,0 +1,78 @@
+.add-customer-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #007bff;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+
+.add-customer-link:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+.customer-list {
+    list-style: none;
+    margin: 0;
+    padding: 20px;
+}
+.customer-list-page {
+    padding: 20px;
+}
+
+.customer-list-page header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.no-customers-found {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #666;
+    font-weight: 600;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 30%;
+    margin: 0 auto;
+}
+.no-customers-found button {
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 8px 16px;
+}
+.customer-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 35%;
+}
+.search-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+}
+.search-container input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 16px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 80%;
+}
+.search-icon {
+    font-size: 24px;
+}

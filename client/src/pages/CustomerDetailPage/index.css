@@ -1,0 +1,109 @@
+.customer-detail-page {
+    padding: 20px;
+}
+
+.customer-detail-page header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.back-to-customer-list-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: 600;
+    font-size: 16px;
+    border: 1px solid #007bff;
+    padding: 8px 16px;
+    border-radius: 6px;
+}
+.back-to-customer-list-link:hover {
+    background: #007bff;
+    color: #fff;
+}
+.customer-detail {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 20px;
+    width: 30%;
+}
+.customer-detail-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5%;
+}
+.addresses {
+    margin-top: 20px;
+    width: 50%;
+    border: 1px solid #ccc;
+    padding: 20px;
+}
+.no-addresses {
+    color: #000;
+    text-align: center;
+    list-style: none;
+}
+.add-address-button {
+    margin: 20px auto 0;
+    padding: 8px 16px;
+    border: 1px solid #007bff;
+    background: #007bff;
+    color: #fff;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+
+}
+.add-address-button:hover {
+    background: #0056b3;
+}
+
+.update-title {
+    text-align: center;
+    color: #2c3e50;
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+  
+  .update-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    background: #f9f9f9;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+  }
+  
+  .update-form input {
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+  }
+  
+  .update-form input:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+    outline: none;
+  }
+  
+  .customer-detail button,.update-form button {
+    padding: 12px;
+    background: #3498db;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .customer-detail button,.update-form button:hover {
+    background: #2980b9;
+  }
+  
