@@ -21,6 +21,7 @@ const CustomerListPage = () => {
 
     useEffect(() => {
         fetchCustomers();
+        
     }, []);
     const fetchCustomers = async (e) => {
         setApiResponse(prevState => ({ ...prevState, apiStatus: apiStatusConstants.loading }));
@@ -31,6 +32,7 @@ const CustomerListPage = () => {
             setApiResponse(prevState => ({ ...prevState, apiStatus: apiStatusConstants.failure, Error: error }));
         }
     };
+
 
     const renderCustomers = () => {
         switch (apiResponse.apiStatus) {

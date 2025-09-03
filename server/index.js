@@ -55,16 +55,9 @@ app.get('/api/customers', async (req, res) => {
   console.log(search, "search");
   
   try {
-    if(search === undefined) {
-      const getCustomersQuery = 'SELECT * FROM customers';
-      const customers = await db.all(getCustomersQuery);
-      res.status(200).send(customers);
-    } else {
-      const getCustomersQuery = `SELECT * FROM customers WHERE first_name LIKE '${search}' OR last_name LIKE '${search}' OR phone_number LIKE '${search}'`;
-      const customers = await db.all(getCustomersQuery);
-      res.status(200).send(customers);
-    }
-   
+    const getCustomersQuery = 'SELECT * FROM customers';
+    const customers = await db.all(getCustomersQuery); 
+    res.status(200).send(customers);
   } catch (error) {
     res.status(500).send({ error: 'Internal Server Error' });
   }
