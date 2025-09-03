@@ -17,7 +17,7 @@ const apiStatusConstants = {
 const CustomerListPage = () => {
     const [apiResponse, setApiResponse] = useState({ apiStatus: apiStatusConstants.initial, apiData: null, Error: null });
     const history = useHistory();
-    const [search, setSearch] = useState('');
+    // const [search, setSearch] = useState('');
 
     useEffect(() => {
         fetchCustomers();
