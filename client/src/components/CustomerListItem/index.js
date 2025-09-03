@@ -11,7 +11,7 @@ const CustomerListItem = (props) => {
         history.push(`/customer-detail/${id}`);
     };
     const handleDelete = async () => {
-        const url = `http://localhost:5000/api/customers/${id}`;
+        const url = `https://qwipo-assignment-1-gwj7.onrender.com/api/customers/${id}`;
         try {
             const response = await axios.delete(url);
             onReload();

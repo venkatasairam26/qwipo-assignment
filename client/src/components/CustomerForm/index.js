@@ -15,7 +15,7 @@ const CustomerForm = () => {
         e.preventDefault();
         const formData = { first_name, last_name, phone_number };
         try {
-          await axios.post("http://localhost:5000/api/customers", formData);
+          await axios.post("https://qwipo-assignment-1-gwj7.onrender.com/api/customers", formData);
           setError("Customer added successfully!");
           setTimeout(() => {
             history.push('/customer-list');

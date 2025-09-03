@@ -25,7 +25,7 @@ const CustomerListPage = () => {
     const fetchCustomers = async (e) => {
         setApiResponse(prevState => ({ ...prevState, apiStatus: apiStatusConstants.loading }));
         try {
-            const response = await axios.get(`http://localhost:5000/api/customers?search=${e}`);
+            const response = await axios.get(`https://qwipo-assignment-1-gwj7.onrender.com/api/customers?search=${e}`);
             setApiResponse(prevState => ({ ...prevState, apiStatus: apiStatusConstants.success, apiData: response.data }));
         } catch (error) {
             setApiResponse(prevState => ({ ...prevState, apiStatus: apiStatusConstants.failure, Error: error }));

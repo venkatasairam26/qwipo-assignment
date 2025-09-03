@@ -15,7 +15,7 @@ const AddressItem = (props) => {
         setEditMode(prev => !prev);
     };
     const handleUpdate = async () => {
-        const url = `http://localhost:5000/api/addresses/${id}`;
+        const url = `https://qwipo-assignment-1-gwj7.onrender.com/api/addresses/${id}`;
         const formData = { address_details: updateAddress, city: updateCity, state: updateState, pin_code: updatePin_code };
         try {
             const response = await axios.put(url, formData);
@@ -29,7 +29,7 @@ const AddressItem = (props) => {
     };
     const handleDelete = async () => {
         console.log(id, "id");
-        const url = `http://localhost:5000/api/addresses/${id}`;
+        const url = `https://qwipo-assignment-1-gwj7.onrender.com/api/addresses/${id}`;
         try {
             const response = await axios.delete(url);
         } catch (error) {

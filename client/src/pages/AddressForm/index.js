@@ -19,7 +19,7 @@ const AddressForm = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const url = `http://localhost:5000/api/customers/${id}/addresses`;
+        const url = `https://qwipo-assignment-1-gwj7.onrender.com/api/customers/${id}/addresses`;
         const formData = { id,address, city, state, pin_code };
         
         try {

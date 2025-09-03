@@ -30,7 +30,7 @@ const CustomerDetailPage = () => {
     const fetchCustomerDetails = async () => {
         setApiResponse(prevState => ({ ...prevState, apiStatus: apiStatusConstants.loading }));
         try {
-            const response = await axios.get(`http://localhost:5000/api/customers/${id}`);
+            const response = await axios.get(`https://qwipo-assignment-1-gwj7.onrender.com/api/customers/${id}`);
             setApiResponse(prevState => ({ ...prevState, apiStatus: apiStatusConstants.success, apiData: response.data }));
             setFirstName(response.data.first_name);
             setLastName(response.data.last_name);
@@ -46,7 +46,7 @@ const CustomerDetailPage = () => {
     const handleUpdateCustomer = async (e) => {
         e.preventDefault();
         console.log(firstName, lastName, phoneNumber);
-        const url = `http://localhost:5000/api/customers/${id}`;
+        const url = `https://qwipo-assignment-1-gwj7.onrender.com/api/customers/${id}`;
         const formData = { first_name: firstName, last_name: lastName, phone_number: phoneNumber };
         try {
             await axios.put(url, formData);
